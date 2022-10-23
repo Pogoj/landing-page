@@ -25,12 +25,12 @@ Quote Text: 36px, light italic, #1F2937
 Quote Source: 24px, extra-bold, #1F2937
 */
 
+/* Body Styling */
 .body-wrapper{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-
 
 /* Styling for Alignments and Design */
 * > *{
@@ -77,10 +77,16 @@ Quote Source: 24px, extra-bold, #1F2937
 /* Hero Styling */
 
 .hero{
-    background: #1F2937;
+    /* Parallax Image Styling */
+    background-image: url("/media/parallax.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Rest of CSS */
     border: dotted 2px black;
     color: white;
-    padding: 2em 0px
+    padding: 2em 0px;
 }
 
 .hero button{
@@ -113,7 +119,13 @@ Quote Source: 24px, extra-bold, #1F2937
 
 /* Content Styling */
 .content{
-    background: lightpink;
+/* Parallax Image Styling */
+    background-image: url("/media/parallax.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+/* Rest of CSS */
     border: dotted 2px black;
     display: flex;
     flex-direction: column;
@@ -132,7 +144,7 @@ Quote Source: 24px, extra-bold, #1F2937
     align-items: center;
     border: #3882F6 solid 5px;
     border-radius: 12px;
-    filter: drop-shadow(0 0 .75rem blue)
+    filter: drop-shadow(0 0 .75rem blue);
 }
 
 .content-bottom{
@@ -145,11 +157,11 @@ Quote Source: 24px, extra-bold, #1F2937
 .card-image{
     padding-bottom: 1em;
     display: flex;
-    justify-content: center;spaanse moeder 
+    justify-content: center;
 }
 /* CTA Styling */
 .cta{
-    background: lightsalmon;
+    background: salmon;
     border: dotted 2px black;
 }
 /* Footer Styling */
