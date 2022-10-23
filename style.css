@@ -112,9 +112,23 @@ Quote Source: 24px, extra-bold, #1F2937
     gap: 12px;
 }
 
+.hero-left h1{
+    padding: 8px;
+    background-color:rgba(31, 41, 55, 0.6);
+    border: #3882F6 solid 5px;
+    border-radius: 12px;
+    filter: drop-shadow(0 0 .75rem #1f2937cc);
+}
+
 .hero-right{
     display: flex;
     align-items: center; 
+}
+
+.hero-right img{
+    width: 400px;
+    border: #3882F6 groove 10px;
+    border-radius: 12px;
 }
 
 /* Content Styling */
