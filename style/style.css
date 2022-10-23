@@ -1,6 +1,29 @@
 body{
     margin: 0;
+    font-family: "Exo 2", Helvetica, sans-serif;
 }
+
+h1, h2, .cta-title{
+    font-family: Audiowide, sans-serif
+}
+
+/* 
+Reference
+Background Specs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Hero and Footer: #1F2937
+Button and CTA Background: #3882F6
+Quote Section: #E5E7EB
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Text Specs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Header Logo: 24px, #F9FAF8
+Header Link and Hero Text: 18px, #E5E7EB
+Hero Title: 48px, extra-bold, #F9FAF8
+Content Title: 36px, extra-bold, #1F2937
+Quote Text: 36px, light italic, #1F2937
+Quote Source: 24px, extra-bold, #1F2937
+*/
 
 .body-wrapper{
     display: flex;
@@ -8,31 +31,51 @@ body{
     min-height: 100vh;
 }
 
+
+/* Styling for Alignments and Design */
+* > *{
+    border: dotted 1px red;
+}
+/* Header Styling */
 .header{
     background: lightcyan;
     border: dotted 2px black;
+    display: flex;
+}
+/* Header Content Styling */
+.header img{
+    height: 75px;
+    width: auto;
 }
 
+.header ul li{
+    list-style: none; 
+}
+.header ul li a{
+    color: black;
+    text-decoration: none;
+}
+/* Hero Styling */
 .hero{
     background: lightgreen;
     border: dotted 2px black;
 }
-
+/* Content Styling */
 .content{
     background: lightpink;
     border: dotted 2px black;
 }
-
+/* Testimonial Styling */
 .testimonial{
     background: lightyellow;
     border: dotted 2px black;
 }
-
+/* CTA Styling */
 .cta{
     background: lightsalmon;
     border: dotted 2px black;
 }
-
+/* Footer Styling */
 .footer{
     background: lightgrey;
     border: dotted 2px black;
