@@ -1,0 +1,175 @@
+body{
+    margin: 0;
+    font-family: "Exo 2", Helvetica, sans-serif;
+}
+
+h1, h2, footer, .cta-title{
+    font-family: Audiowide, sans-serif
+}
+
+/* 
+Reference
+Background Specs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Hero and Footer: #1F2937
+Button and CTA Background: #3882F6
+Quote Section: #E5E7EB
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Text Specs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Header Logo: 24px, #F9FAF8
+Header Link and Hero Text: 18px, #E5E7EB
+Hero Title: 48px, extra-bold, #F9FAF8
+Content Title: 36px, extra-bold, #1F2937
+Quote Text: 36px, light italic, #1F2937
+Quote Source: 24px, extra-bold, #1F2937
+*/
+
+.body-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* Styling for Alignments and Design */
+* > *{
+    border: dotted 1px red;
+}
+/* Header Styling */
+.header{
+    background: #1F2937;
+    border: dotted 2px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Header Content Styling */
+.header img{
+    height: 100px;
+    width: auto;
+    
+}
+
+.header ul li{
+    list-style: none; 
+}
+.header ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/* Header Flex Alignment */
+
+.header-logo{
+    display: flex;
+    flex-direction: row;
+}
+
+.header-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 12px;
+    padding-inline-start: 0px;
+    margin: 16px;
+}
+/* Hero Styling */
+
+.hero{
+    background: #1F2937;
+    border: dotted 2px black;
+    color: white;
+    padding: 2em 0px
+}
+
+.hero button{
+    width: fit-content;
+    font-size: 16px;
+    background: #3882F6;
+}
+/* Hero Flex Alignment */
+
+.hero-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 0px 12rem;
+
+}
+
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.hero-right{
+    display: flex;
+    align-items: center; 
+}
+
+/* Content Styling */
+.content{
+    background: lightpink;
+    border: dotted 2px black;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.content-top{
+    display: flex;
+    justify-content: center;
+}
+
+.content img{
+    height: 150px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.content-bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    padding: 0px 6rem;
+}
+.card-image{
+    padding-bottom: 1em;
+}
+
+}
+/* Testimonial Styling */
+.testimonial{
+    background: lightyellow;
+    border: dotted 2px black;
+}
+/* CTA Styling */
+.cta{
+    background: lightsalmon;
+    border: dotted 2px black;
+}
+/* Footer Styling */
+.footer{
+    background: lightgrey;
+    border: dotted 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button Styling */
+
+button{
+    border-radius: 5px;
+}
+
+/* Text Formatting */
+
+p, h1, h2 {
+    margin: inherit;
+}
