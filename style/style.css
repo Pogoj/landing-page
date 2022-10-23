@@ -7,3 +7,33 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
+
+.header{
+    background: lightcyan;
+    border: dotted 2px black;
+}
+
+.hero{
+    background: lightgreen;
+    border: dotted 2px black;
+}
+
+.content{
+    background: lightpink;
+    border: dotted 2px black;
+}
+
+.testimonial{
+    background: lightyellow;
+    border: dotted 2px black;
+}
+
+.cta{
+    background: lightsalmon;
+    border: dotted 2px black;
+}
+
+.footer{
+    background: lightgrey;
+    border: dotted 2px black;
+}
