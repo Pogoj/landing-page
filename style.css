@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: "Exo 2", Helvetica, sans-serif;
+    cursor: url(/media/cursor.cur);
 }
 
 h1, h2, footer, .cta-title{
@@ -78,7 +79,7 @@ Quote Source: 24px, extra-bold, #1F2937
 
 .hero{
     /* Parallax Image Styling */
-    background-image: url("/media/parallax.jpg");
+    background-image: url("./media/parallax.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -91,8 +92,13 @@ Quote Source: 24px, extra-bold, #1F2937
 
 .hero button{
     width: fit-content;
-    font-size: 16px;
+    font-size: 24px;
+    font-family: Audiowide;
+    font-weight: 1000;
     background: #3882F6;
+    color: white;
+    padding: .6em .8em;
+    border-radius: 36px;
 }
 /* Hero Flex Alignment */
 
@@ -100,9 +106,10 @@ Quote Source: 24px, extra-bold, #1F2937
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 24px;
-    padding: 0px 12rem;
-
+    gap: 36px;
+    padding: 0px 24rem;
+    filter: drop-shadow(0 0 1rem #3882F6);
+    justify-content: center;
 }
 
 .hero-left{
@@ -110,23 +117,52 @@ Quote Source: 24px, extra-bold, #1F2937
     flex-direction: column;
     flex-wrap: wrap;
     gap: 12px;
+    font-size: 30px;
+    font-weight: 1000;
+    flex-grow: .5;
 }
 
-.hero-left h1{
+/* EXPERIMENTAL AREA */
+{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+.hero-title{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
     padding: 8px;
-    background-color:rgba(31, 41, 55, 0.6);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     border: #3882F6 solid 5px;
     border-radius: 12px;
     filter: drop-shadow(0 0 .75rem #1f2937cc);
+    flex-grow: 0.25;
 }
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* END EXPERIMENTAL AREA */
 
 .hero-right{
     display: flex;
-    align-items: center; 
+    align-items: center;
+    flex-grow: 2; 
 }
 
 .hero-right img{
-    width: 400px;
+    width: 600px;
     border: #3882F6 groove 10px;
     border-radius: 12px;
 }
@@ -134,7 +170,7 @@ Quote Source: 24px, extra-bold, #1F2937
 /* Content Styling */
 .content{
 /* Parallax Image Styling */
-    background-image: url("/media/parallax.jpg");
+    background-image: url("./media/parallax.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -148,7 +184,16 @@ Quote Source: 24px, extra-bold, #1F2937
 
 .content-top{
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+}
+
+.content-top h2{
+    color: white;
+    background-color: rgba(31, 41, 55, 0.8);
+    padding: 6px 16px;
+    border-radius: 24px
 }
 
 .content img{
@@ -165,7 +210,7 @@ Quote Source: 24px, extra-bold, #1F2937
     display: flex;
     flex-direction: row;
     gap: 12px;
-    padding: 0px 6rem;
+    padding: 0px 16rem;
     text-align: center;
 }
 .card-image{
