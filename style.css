@@ -211,13 +211,14 @@ Quote Source: 24px, extra-bold, #1F2937
     display: flex;
     flex-direction: row;
     gap: 12px;
-    padding: 0px 16rem;
+    padding: 0px 12rem 6em;
     text-align: center;
     color: white;
 }
 
 .content-bottom h3{
     font-size: 1.5em;
+    font-family: Audiowide, sans-serif, Helvetica;
 }
 
 .content-bottom p{
@@ -226,6 +227,10 @@ Quote Source: 24px, extra-bold, #1F2937
 
 .content-bottom .warning{
     font-size: .8em;
+}
+
+.content-bottom p{
+    margin: 0 0 1em 0;
 }
 
 .card-image{
