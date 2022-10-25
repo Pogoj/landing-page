@@ -3,6 +3,10 @@ body{
     font-family: "Exo 2", Helvetica, sans-serif;
 }
 
+body:hover *, body:hover > * {
+    cursor: url(/media/cursor.cur), auto;
+}
+
 h1, h2, footer, .cta-title{
     font-family: Audiowide, sans-serif;
 }
@@ -98,6 +102,12 @@ Quote Source: 24px, extra-bold, #1F2937
     color: white;
     padding: .6em .8em;
     border-radius: 36px;
+    transition: ease .2s;
+}
+/* Button Hover Effect */
+.hero button:hover{
+    filter: drop-shadow(0 0 .4rem #3882F6);
+    border: white; 
 }
 /* Hero Flex Alignment */
 
@@ -120,8 +130,6 @@ Quote Source: 24px, extra-bold, #1F2937
     font-weight: 1000;
     flex-grow: .5;
 }
-
-/* EXPERIMENTAL AREA */
 
 .hero-title{
     display: flex;
@@ -147,7 +155,6 @@ Quote Source: 24px, extra-bold, #1F2937
         background-position: 0% 50%;
     }
 }
-/* END EXPERIMENTAL AREA */
 
 .hero-right{
     display: flex;
