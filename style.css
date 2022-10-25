@@ -213,7 +213,21 @@ Quote Source: 24px, extra-bold, #1F2937
     gap: 12px;
     padding: 0px 16rem;
     text-align: center;
+    color: white;
 }
+
+.content-bottom h3{
+    font-size: 1.5em;
+}
+
+.content-bottom p{
+    font-size: 1.2em;
+}
+
+.content-bottom .warning{
+    font-size: .8em;
+}
+
 .card-image{
     padding-bottom: 1em;
     display: flex;
