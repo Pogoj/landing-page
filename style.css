@@ -3,8 +3,8 @@ body{
     font-family: "Exo 2", Helvetica, sans-serif;
 }
 
-body:hover *, body:hover > * {
-    cursor: url(/media/cursor.cur), auto;
+* {
+    cursor: url(/media/cursor.png), pointer !important;
 }
 
 h1, h2, footer, .cta-title{
@@ -137,8 +137,8 @@ Quote Source: 24px, extra-bold, #1F2937
     font-size: 24px;
     padding: 8px;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    background-size: 300% 300%;
+    animation: gradient 7s ease infinite;
     border: #3882F6 solid 5px;
     border-radius: 12px;
     filter: drop-shadow(0 0 .75rem #1f2937cc);
