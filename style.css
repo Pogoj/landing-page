@@ -38,6 +38,12 @@ Quote Source: 24px, extra-bold, #1F2937
     min-height: 100%;
     min-width: 100%;
 }
+/* Responsive Design for Hero and Content Divs */
+@media (max-width: 800px) {
+    .hero-content, .content-bottom {
+      flex-direction: column;
+    }
+  }
 
 /* Styling for Alignments and Design */
 * > *{
@@ -84,13 +90,15 @@ Quote Source: 24px, extra-bold, #1F2937
 /* Hero Styling */
 
 .hero{
+
     /* Parallax Image Styling */
     background-image: url("./media/parallax.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* Rest of CSS */
+    
+/* Rest of CSS */
     border: dotted 2px black;
     color: white;
     padding: 2em 0px;
@@ -171,33 +179,20 @@ Quote Source: 24px, extra-bold, #1F2937
     border-radius: 12px;
 }
 
+
 /* Content Styling */
 .content{
-/* Parallax Image Styling */
+
+    /* Parallax Image Styling */
     background-image: url("./media/parallax.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-/* Rest of CSS */
-    border: dotted 2px black;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
 
-.content-top{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.content-top h2{
-    color: white;
-    background-color: rgba(31, 41, 55, 0.8);
-    padding: 6px 16px;
-    border-radius: 24px
+    /* Rest of CSS */
+    border: dotted 2px;
+    font-size: 1.5em;
 }
 
 .content img{
@@ -214,7 +209,8 @@ Quote Source: 24px, extra-bold, #1F2937
     display: flex;
     flex-direction: row;
     gap: 12px;
-    padding: 0px 12rem 6em;
+    padding: 0px 0em 6em;
+    margin: 0 8em;
     text-align: center;
     color: white;
 }
@@ -241,11 +237,12 @@ Quote Source: 24px, extra-bold, #1F2937
     display: flex;
     justify-content: center;
 }
-/* Testimnonial Styling */
+/* Testimonial Styling */
 
 .testimonial-banner{
     background-color:rgba(31, 41, 55, 1);
     text-align: center;
+    color: whitesmoke;
 }
 
 .testimonial {
@@ -257,7 +254,7 @@ Quote Source: 24px, extra-bold, #1F2937
     color: lightslategray;
     font-style: italic;
     text-align: center;
-    margin: 0 16em;
+    margin: 0 6em;
 }
 
 .testimonial-source p{
@@ -272,8 +269,38 @@ Quote Source: 24px, extra-bold, #1F2937
 
 /* CTA Styling */
 .cta {
-    background: salmon;
+    background: #1F2937;
     border: dotted 2px black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #3882F6;
+}
+
+.cta-left {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    color: whitesmoke;
+    width: 35vh;
+}
+
+.cta-right button {    
+    width: fit-content;
+    font-size: 16px;
+    font-family: Audiowide;
+    font-weight: 1000;
+    background: #3882F6;
+    color: white;
+    padding: .6em .8em;
+    border-radius: 36px;
+    transition: ease .2s;
+}
+
+.cta-right button:hover{
+    filter: drop-shadow(0 0 .4rem #3882F6);
+    border: white; 
 }
 /* Footer Styling */
 .footer {
