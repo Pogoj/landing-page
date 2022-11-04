@@ -1,6 +1,8 @@
 body{
     margin: 0;
     font-family: "Exo 2", Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
 }
 
 * {
@@ -19,7 +21,7 @@ Hero and Footer: #1F2937
 Button and CTA Background: #3882F6
 Quote Section: #E5E7EB
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Text Specs
+Text Specsu
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Header Logo: 24px, #F9FAF8
 Header Link and Hero Text: 18px, #E5E7EB
@@ -33,7 +35,8 @@ Quote Source: 24px, extra-bold, #1F2937
 .body-wrapper{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100%;
+    min-width: 100%;
 }
 
 /* Styling for Alignments and Design */
@@ -238,13 +241,42 @@ Quote Source: 24px, extra-bold, #1F2937
     display: flex;
     justify-content: center;
 }
+/* Testimnonial Styling */
+
+.testimonial-banner{
+    background-color:rgba(31, 41, 55, 1);
+    text-align: center;
+}
+
+.testimonial {
+    background-color: #1F2937;
+}
+
+.testimonial-text p{
+    font-size: 24px;
+    color: lightslategray;
+    font-style: italic;
+    text-align: center;
+    margin: 0 16em;
+}
+
+.testimonial-source p{
+    color: lightslategray;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin: 0 16em;
+}
+
+
+
 /* CTA Styling */
-.cta{
+.cta {
     background: salmon;
     border: dotted 2px black;
 }
 /* Footer Styling */
-.footer{
+.footer {
     background: lightgrey;
     border: dotted 2px black;
     display: flex;
@@ -254,10 +286,9 @@ Quote Source: 24px, extra-bold, #1F2937
 
 /* Button Styling */
 
-button{
+button {
     border-radius: 5px;
 }
-
 /* Text Formatting */
 
 p, h1, h2 {
